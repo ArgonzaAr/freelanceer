@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Freelancer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -31,14 +31,15 @@
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
                   </svg>
-                </div>
-                <p>México, CDMX</p>
+            </div>
+            <p>México, CDMX</p>
             <a class="boton" href="#">Contactar</a>
-        </div>
+        </div> <!--Contenido Hero-->
     </section>
 
     <main class="contenedor sombra">
         <h2>Mis servicios</h2>
+
         <div class="servicios">
             <section class="servicio">
                 <h2>Diseño web</h2>
@@ -49,8 +50,8 @@
                         <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
                         <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
                         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
-                      </svg>
-                    </div>
+                    </svg>
+                </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, suscipit laboriosam id alias aperiam ipsam tempore labore quasi tenetur nostrum quis mollitia iusto. Non pariatur voluptatibus quisquam quo aliquam mollitia.</p>
             </section>
     
@@ -66,7 +67,7 @@
                         <line x1="16" y1="3" x2="15" y2="5" />
                         <line x1="9" y1="18" x2="9" y2="21" />
                         <line x1="15" y1="18" x2="15" y2="21" />
-                      </svg>
+                    </svg>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A et enim aperiam. Nisi quos minima officia consequuntur soluta dolores earum, commodi excepturi praesentium nihil consectetur voluptatibus animi modi unde dolor!</p>
             </section>
@@ -81,33 +82,46 @@
                         <line x1="5" y1="21" x2="5" y2="10.85" />
                         <line x1="19" y1="21" x2="19" y2="10.85" />
                         <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                      </svg>
+                    </svg>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vero et doloremque perspiciatis delectus cum laborum doloribus sed earum non reprehenderit laudantium, exercitationem voluptate repudiandae vel quod asperiores consequatur excepturi.</p>
             </section>    
-        </div>
+        </div> <!--Servicios-->
+
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactanos llenando todos los campos</legend>
+                    <div class="contenedorCampos">                        
+                        <div class="campo">
+                            <label for="">Nombre completo</label>
+                            <input class = "input-text"type="text" name="Nombre" id="" placeholder="Nombre Completo">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class = "input-text"type="tel" name="telefono" id="" placeholder="Teléfono">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Correo electrónico</label>
+                            <input class = "input-text"type="email" name="correo" id="" placeholder="Correo Electrónico">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class = "input-text"name="mensaje" id="" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <input class="boton wd-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
-    <section>
-        <h2>Contacto</h2>
-        <form action="" method="post">
-            <fieldset>
-                <legend>Contactanos llenando todos los campos</legend>
-                <label for="">Nombre completo</label>
-                <input type="text" name="Nombre" id="" placeholder="Nombre Completo">
-
-                <label for="">Teléfono</label>
-                <input type="tel" name="telefono" id="" placeholder="Teléfono">
-
-                <label for="">Correo electrónico</label>
-                <input type="email" name="correo" id="" placeholder="Correo Electrónico">
-
-                <label for="">Mensaje</label>
-                <textarea name="mensaje" id="" placeholder="Mensaje"></textarea>
-
-                <input type="submit" value="Enviar">
-        </form>
-    </section>
 
     <footer>
         Todos los derechos reservados Argonza Roblero Ángel Rogelio

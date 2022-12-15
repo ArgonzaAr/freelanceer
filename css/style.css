@@ -49,6 +49,7 @@ body{
 .boton:hover{
     cursor: pointer;
 }
+
 /* Tipografia */
 h1 {
     font-size: 3.8rem;
@@ -69,6 +70,25 @@ h1,h2,h3 {
 }
 .titulo span{
     font-size: 2rem;
+}
+
+/*Utilidades*/
+.wd-sm-100{
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .wd-sm-100{
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
 }
 
 /*Navegación principal*/
@@ -103,7 +123,7 @@ h1,h2,h3 {
 
 /*Contenido Hero*/
 .hero{
-    background-image: url(/images/hero2.jpg);
+    background-image: url(../images/hero2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 480px;
@@ -170,6 +190,7 @@ alto y ancho de las columnas.
 
 .servicio p{
     line-height: 2; /*Espaciado entre línea*/
+    text-align: center;
 }
 .servicio .icons{
     height: 15rem;
@@ -179,4 +200,49 @@ alto y ancho de las columnas.
     display: flex;
     justify-content: center; /*alinea los items en forma horizontal*/
     align-items: center; /*alinea los items en forma vertical*/
+}
+
+/*Estilo para formularios*/
+
+.formulario{
+    background-color: var(--color1);
+    width: min(60rem, 100%); /*Utiliza el valor más pequeño entre dos variables*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: var(--color4);
+}
+
+/*Campos de formulario*/
+.contenedorCampos{
+
+}
+.campo{
+    margin-bottom: 3rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display:block;
+}
+
+.input-text{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1.5rem;
 }
